@@ -7,7 +7,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-  URL= 'http://localhost:8080/educ/';
+  URL= 'https://backendlgm.herokuapp.com/educ/';
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Educacion[]>{
