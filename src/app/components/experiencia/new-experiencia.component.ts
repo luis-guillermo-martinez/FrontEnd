@@ -9,9 +9,12 @@ import { SExperienciaService } from 'src/app/service/s-experiencia.service';
   styleUrls: ['./new-experiencia.component.css']
 })
 export class NewExperienciaComponent implements OnInit {
-  nombreE: string = '';
-  descripcionE: string = '';
-  fechaE: string;
+  imgBusiness!: string;
+    business!: string;
+    position!: string;
+    yearIn!: Date;
+    yearOut!: Date;
+    descriptionPosition!: string;
 
   constructor(private sExperiencia: SExperienciaService, private router: Router) { }
 
@@ -19,7 +22,10 @@ export class NewExperienciaComponent implements OnInit {
   }
 
   onCreate(): void {
-    const expe = new Experiencia(this.nombreE, this.descripcionE,this.fechaE);
+    const expe = new Experiencia(this.imgBusiness, this.business, this.position, 
+      this.yearIn, this.yearOut, this.descriptionPosition);
+      console.log(Experiencia);
+
     this.sExperiencia.save(expe).subscribe(
       data => {
         alert("Experiencia añadida");
@@ -29,6 +35,9 @@ export class NewExperienciaComponent implements OnInit {
         this.router.navigate(['']);
       }
     )
+  }
+volver(){
+    this.router.navigate(['/'])
   }
 
 }
