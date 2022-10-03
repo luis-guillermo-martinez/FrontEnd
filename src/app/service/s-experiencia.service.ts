@@ -7,12 +7,12 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  URL = 'https://portbackendlgm.herokuapp.com/explab/';
+  URL = 'http://localhost:8080/Experiencia/';
 
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Experiencia[]>{
-    return this.httpClient.get<Experiencia[]>(this.URL + 'lista');
+    return this.httpClient.get<Experiencia[]>(this.URL + 'list');
   }
 
   public detail(id: number): Observable<Experiencia>{

@@ -11,7 +11,7 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { SySkillComponent } from './components/sy-skill/sy-skill.component';
+// import { SySkillComponent } from './components/sy-skill/sy-skill.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
@@ -33,7 +33,7 @@ import { NewEducacionComponent } from './components/educacion/new-educacion.comp
     AcercaDeComponent,
     ExperienciaComponent,
     EducacionComponent,
-    SySkillComponent,
+    // SySkillComponent,
     ProyectoComponent,
     FooterComponent,
     HomeComponent,

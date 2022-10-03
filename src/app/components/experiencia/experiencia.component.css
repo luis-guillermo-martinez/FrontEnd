@@ -16,7 +16,7 @@ div{
     justify-content: space-between;
 }
 .container{
-    display: inline-table;
+    /* display: inline-table; */
     text-align: inherit;
     width: auto;
     color: #ffffff;
@@ -26,7 +26,7 @@ h4{
     padding-top: 60px;
 }
 #LogoBusiness{
-    width: 200px;
+    width: 100px;
     margin: 0 auto;
 }
 #expcontainer{
@@ -41,7 +41,7 @@ h4{
 }
 h1{
     color: rgb(255, 255, 255);
-    padding: 20px;
+    padding: 10px;
 }
 #title{
   display: flex;
